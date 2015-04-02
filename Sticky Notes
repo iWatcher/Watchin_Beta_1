@@ -1,0 +1,15 @@
+Steps for Git hub 
+----------------------------------------------------------------------------
+
+git init
+
+git add .
+
+git commit -m "message"
+
+git remote add origin https://github.com/iWatcher/Watchin_Development.git
+
+git push -u origin master
+
+
+===============================================================================
