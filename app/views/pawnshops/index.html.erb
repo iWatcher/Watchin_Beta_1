@@ -1,0 +1,85 @@
+<h1>Listing pawnshops</h1>
+
+<table>
+  <tr>
+    <tr>
+    <th>Actor</th>
+    <th>Category</th>
+    <th>Sub cartegory</th>
+    <th>Product title</th>
+    <th>Model number</th>
+    <th>Description</th>
+    <th>Images</th>
+    <th>Reference link1</th>
+    <th>Reference link2</th>
+    <th>Reference link3</th>
+    <th>Purchase date</th>
+    <th>Reason for sale</th>
+    <th>Accessories</th>
+    <th>Contact</th>
+    <th>Pick up location1</th>
+    <th>Pick up location2</th>
+    <th>Pick up location3</th>
+    <th>Pick up location4</th>
+    <th>Pick up location5</th>
+    <th>Price</th>
+    <th>Negotiable</th>
+    <th>Spam</th>
+    <th>Visible</th>
+    <th>Pageview</th>
+    <th>Voteup</th>
+    <th>Comment</th>
+    <th>Created</th>
+    <th>Modified</th>
+    <th>Type pawn</th>
+    <th>Avaialble from</th>
+    <th>Avaialble till</th>
+    <th></th>
+    <th></th>
+    <th></th>
+</tr>
+  </tr>
+
+<% @pawnshops.each do |pawnshop| %>
+  <tr>
+    <td><%= pawnshop.actor_id %></td>
+    <td><%= pawnshop.category %></td>
+    <td><%= pawnshop.sub_cartegory %></td>
+    <td><%= pawnshop.product_title %></td>
+    <td><%= pawnshop.model_number %></td>
+    <td><%= pawnshop.description %></td>
+    <td><%= pawnshop.images %></td>
+    <td><%= pawnshop.Reference_link1 %></td>
+    <td><%= pawnshop.Reference_link2 %></td>
+    <td><%= pawnshop.Reference_link3 %></td>
+    <td><%= pawnshop.purchase_date %></td>
+    <td><%= pawnshop.reason_for_sale %></td>
+    <td><%= pawnshop.accessories %></td>
+    <td><%= pawnshop.contact %></td>
+    <td><%= pawnshop.pick_up_location1 %></td>
+    <td><%= pawnshop.pick_up_location2 %></td>
+    <td><%= pawnshop.pick_up_location3 %></td>
+    <td><%= pawnshop.pick_up_location4 %></td>
+    <td><%= pawnshop.pick_up_location5 %></td>
+    <td><%= pawnshop.price %></td>
+    <td><%= pawnshop.negotiable %></td>
+    <td><%= pawnshop.spam %></td>
+    <td><%= pawnshop.visible %></td>
+    <td><%= pawnshop.pageview %></td>
+    <td><%= pawnshop.voteup %></td>
+    <td><%= pawnshop.comment %></td>
+    <td><%= pawnshop.created %></td>
+    <td><%= pawnshop.modified %></td>
+    <td><%= pawnshop.type_pawn %></td>
+    <td><%= pawnshop.avaialble_from %></td>
+    <td><%= pawnshop.avaialble_till %></td>
+    <td><%= link_to 'Show', pawnshop %></td>
+    <td><%= link_to 'Edit', edit_pawnshop_path(pawnshop) %></td>
+    <td><%= link_to 'Destroy', pawnshop, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Pawnshop', new_pawnshop_path %>

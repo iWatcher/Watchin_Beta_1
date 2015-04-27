@@ -1,8 +1,22 @@
 VimWatchin::Application.routes.draw do
 
 
+  resources :photos
+
+
+  resources :events
+
+
+  resources :pawnshops
+
+
+  get "users/index"
+
 root :to => "demo#index"
-  #get "demo/index"
+
+  post "demo/index"
+
+  get "demo/index"
 
 match 'auth/:provider/callback', to: 'sessions#create'
 match 'auth/failure', to: redirect('/')
@@ -62,5 +76,5 @@ match 'signout', to: 'sessions#destroy', as: 'signout'
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
-  # match ':controller(/:action(/:id))(.:format)'
+  match ':controller(/:action(/:id))' , :via => :get
 end

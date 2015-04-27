@@ -1,0 +1,67 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  actor_id: MyString
+  category: MyString
+  sub_cartegory: MyString
+  product_title: MyString
+  model_number: MyString
+  description: MyString
+  images: MyString
+  Reference_link1: MyString
+  Reference_link2: MyString
+  Reference_link3: MyString
+  purchase_date: 2015-04-15
+  reason_for_sale: MyString
+  accessories: MyString
+  contact: MyString
+  pick_up_location1: MyString
+  pick_up_location2: MyString
+  pick_up_location3: MyString
+  pick_up_location4: MyString
+  pick_up_location5: MyString
+  price: 1
+  negotiable: false
+  spam: MyString
+  visible: false
+  pageview: 1
+  voteup: 
+  comment: MyString
+  created: 2015-04-15 14:39:23
+  modified: 2015-04-15 14:39:23
+  type_pawn: MyString
+  avaialble_from: 2015-04-15 14:39:23
+  avaialble_till: 2015-04-15 14:39:23
+
+two:
+  actor_id: MyString
+  category: MyString
+  sub_cartegory: MyString
+  product_title: MyString
+  model_number: MyString
+  description: MyString
+  images: MyString
+  Reference_link1: MyString
+  Reference_link2: MyString
+  Reference_link3: MyString
+  purchase_date: 2015-04-15
+  reason_for_sale: MyString
+  accessories: MyString
+  contact: MyString
+  pick_up_location1: MyString
+  pick_up_location2: MyString
+  pick_up_location3: MyString
+  pick_up_location4: MyString
+  pick_up_location5: MyString
+  price: 1
+  negotiable: false
+  spam: MyString
+  visible: false
+  pageview: 1
+  voteup: 
+  comment: MyString
+  created: 2015-04-15 14:39:23
+  modified: 2015-04-15 14:39:23
+  type_pawn: MyString
+  avaialble_from: 2015-04-15 14:39:23
+  avaialble_till: 2015-04-15 14:39:23

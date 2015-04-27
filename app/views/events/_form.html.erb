@@ -1,0 +1,105 @@
+<%= form_for(@event) do |f| %>
+  <% if @event.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@event.errors.count, "error") %> prohibited this event from being saved:</h2>
+
+      <ul>
+      <% @event.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :actor_id %><br />
+    <%= f.text_field :actor_id %>
+  </div>
+  <div class="field">
+    <%= f.label :event_id %><br />
+    <%= f.text_field :event_id %>
+  </div>
+  <div class="field">
+    <%= f.label :category %><br />
+    <%= f.text_field :category %>
+  </div>
+  <div class="field">
+    <%= f.label :event_name %><br />
+    <%= f.text_field :event_name %>
+  </div>
+  <div class="field">
+    <%= f.label :short_description %><br />
+    <%= f.text_field :short_description %>
+  </div>
+  <div class="field">
+    <%= f.label :start_date %><br />
+    <%= f.date_select :start_date %>
+  </div>
+  <div class="field">
+    <%= f.label :end_date %><br />
+    <%= f.date_select :end_date %>
+  </div>
+  <div class="field">
+    <%= f.label :start_time %><br />
+    <%= f.time_select :start_time %>
+  </div>
+  <div class="field">
+    <%= f.label :end_time %><br />
+    <%= f.time_select :end_time %>
+  </div>
+  <div class="field">
+    <%= f.label :venu %><br />
+    <%= f.text_field :venu %>
+  </div>
+  <div class="field">
+    <%= f.label :visible_locations %><br />
+    <%= f.text_field :visible_locations %>
+  </div>
+  <div class="field">
+    <%= f.label :visible_scope %><br />
+    <%= f.text_field :visible_scope %>
+  </div>
+  <div class="field">
+    <%= f.label :image %><br />
+    <%= f.text_field :image %>
+  </div>
+  <div class="field">
+    <%= f.label :long_desciption %><br />
+    <%= f.text_field :long_desciption %>
+  </div>
+  <div class="field">
+    <%= f.label :image1 %><br />
+    <%= f.text_field :image1 %>
+  </div>
+  <div class="field">
+    <%= f.label :image2 %><br />
+    <%= f.text_field :image2 %>
+  </div>
+  <div class="field">
+    <%= f.label :image3 %><br />
+    <%= f.text_field :image3 %>
+  </div>
+  <div class="field">
+    <%= f.label :image4 %><br />
+    <%= f.text_field :image4 %>
+  </div>
+  <div class="field">
+    <%= f.label :image5 %><br />
+    <%= f.text_field :image5 %>
+  </div>
+  <div class="field">
+    <%= f.label :friend_id %><br />
+    <%= f.text_field :friend_id %>
+  </div>
+  <div class="field">
+    <%= f.label :spam %><br />
+    <%= f.check_box :spam %>
+  </div>
+  <div class="field">
+    <%= f.label :page_views %><br />
+    <%= f.text_field :page_views %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

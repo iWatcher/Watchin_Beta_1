@@ -1,0 +1,141 @@
+<%= form_for(@pawnshop) do |f| %>
+  <% if @pawnshop.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pawnshop.errors.count, "error") %> prohibited this pawnshop from being saved:</h2>
+
+      <ul>
+      <% @pawnshop.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :actor_id %><br />
+    <%= f.text_field :actor_id %>
+  </div>
+  <div class="field">
+    <%= f.label :category %><br />
+    <%= f.text_field :category %>
+  </div>
+  <div class="field">
+    <%= f.label :sub_cartegory %><br />
+    <%= f.text_field :sub_cartegory %>
+  </div>
+  <div class="field">
+    <%= f.label :product_title %><br />
+    <%= f.text_field :product_title %>
+  </div>
+  <div class="field">
+    <%= f.label :model_number %><br />
+    <%= f.text_field :model_number %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :images %><br />
+    <%= f.text_field :images %>
+  </div>
+  <div class="field">
+    <%= f.label :Reference_link1 %><br />
+    <%= f.text_field :Reference_link1 %>
+  </div>
+  <div class="field">
+    <%= f.label :Reference_link2 %><br />
+    <%= f.text_field :Reference_link2 %>
+  </div>
+  <div class="field">
+    <%= f.label :Reference_link3 %><br />
+    <%= f.text_field :Reference_link3 %>
+  </div>
+  <div class="field">
+    <%= f.label :purchase_date %><br />
+    <%= f.date_select :purchase_date %>
+  </div>
+  <div class="field">
+    <%= f.label :reason_for_sale %><br />
+    <%= f.text_field :reason_for_sale %>
+  </div>
+  <div class="field">
+    <%= f.label :accessories %><br />
+    <%= f.text_field :accessories %>
+  </div>
+  <div class="field">
+    <%= f.label :contact %><br />
+    <%= f.text_field :contact %>
+  </div>
+  <div class="field">
+    <%= f.label :pick_up_location1 %><br />
+    <%= f.text_field :pick_up_location1 %>
+  </div>
+  <div class="field">
+    <%= f.label :pick_up_location2 %><br />
+    <%= f.text_field :pick_up_location2 %>
+  </div>
+  <div class="field">
+    <%= f.label :pick_up_location3 %><br />
+    <%= f.text_field :pick_up_location3 %>
+  </div>
+  <div class="field">
+    <%= f.label :pick_up_location4 %><br />
+    <%= f.text_field :pick_up_location4 %>
+  </div>
+  <div class="field">
+    <%= f.label :pick_up_location5 %><br />
+    <%= f.text_field :pick_up_location5 %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br />
+    <%= f.number_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :negotiable %><br />
+    <%= f.check_box :negotiable %>
+  </div>
+  <div class="field">
+    <%= f.label :spam %><br />
+    <%= f.text_field :spam %>
+  </div>
+  <div class="field">
+    <%= f.label :visible %><br />
+    <%= f.check_box :visible %>
+  </div>
+  <div class="field">
+    <%= f.label :pageview %><br />
+    <%= f.number_field :pageview %>
+  </div>
+  <div class="field">
+    <%= f.label :voteup %><br />
+    <%= f.text_field :voteup %>
+  </div>
+  <div class="field">
+    <%= f.label :comment %><br />
+    <%= f.text_field :comment %>
+  </div>
+  <div class="field">
+    <%= f.label :created %><br />
+    <%= f.datetime_select :created %>
+  </div>
+  <div class="field">
+    <%= f.label :modified %><br />
+    <%= f.datetime_select :modified %>
+  </div>
+  <div class="field">
+    <%= f.label :type_pawn %><br />
+    <%= f.text_field :type_pawn %>
+  </div>
+  <div class="field">
+    <%= f.label :avaialble_from %><br />
+    <%= f.datetime_select :avaialble_from %>
+  </div>
+  <div class="field">
+    <%= f.label :avaialble_till %><br />
+    <%= f.datetime_select :avaialble_till %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

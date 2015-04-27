@@ -1,0 +1,65 @@
+<h1>Listing events</h1>
+
+<table>
+  <tr>
+    <th>Actor</th>
+    <th>Event</th>
+    <th>Category</th>
+    <th>Event name</th>
+    <th>Short description</th>
+    <th>Start date</th>
+    <th>End date</th>
+    <th>Start time</th>
+    <th>End time</th>
+    <th>Venu</th>
+    <th>Visible locations</th>
+    <th>Visible scope</th>
+    <th>Image</th>
+    <th>Long desciption</th>
+    <th>Image1</th>
+    <th>Image2</th>
+    <th>Image3</th>
+    <th>Image4</th>
+    <th>Image5</th>
+    <th>Friend</th>
+    <th>Spam</th>
+    <th>Page views</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @events.each do |event| %>
+  <tr>
+    <td><%= event.actor_id %></td>
+    <td><%= event.event_id %></td>
+    <td><%= event.category %></td>
+    <td><%= event.event_name %></td>
+    <td><%= event.short_description %></td>
+    <td><%= event.start_date %></td>
+    <td><%= event.end_date %></td>
+    <td><%= event.start_time %></td>
+    <td><%= event.end_time %></td>
+    <td><%= event.venu %></td>
+    <td><%= event.visible_locations %></td>
+    <td><%= event.visible_scope %></td>
+    <td><%= event.image %></td>
+    <td><%= event.long_desciption %></td>
+    <td><%= event.image1 %></td>
+    <td><%= event.image2 %></td>
+    <td><%= event.image3 %></td>
+    <td><%= event.image4 %></td>
+    <td><%= event.image5 %></td>
+    <td><%= event.friend_id %></td>
+    <td><%= event.spam %></td>
+    <td><%= event.page_views %></td>
+    <td><%= link_to 'Show', event %></td>
+    <td><%= link_to 'Edit', edit_event_path(event) %></td>
+    <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Event', new_event_path %>

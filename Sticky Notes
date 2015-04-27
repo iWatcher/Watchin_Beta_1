@@ -13,3 +13,37 @@ git push -u origin master
 
 
 ===============================================================================
+
+	To push in existing repository
+
+git add .
+
+git commit -m "message"
+
+git push -u origin master
+
+==============================================================================
+
+
+rails generate scaffold User user_name:string email:string password:string
+rake db:migrate
+
+============================================
+
+
+add a existing attribute in a table
+rails g migration add_image_to_pawnshop image:string
+rake db:migrate
+
+---------------------------------------
+
+
+Pwanshop scaffold statment 
+
+rails generate scaffold pawnshop actor_id:string category:string sub_cartegory:string product_title:string model_number:string description:string images Reference_link1:string Reference_link2:string Reference_link3:string purchase_date:date reason_for_sale:string accessories:string contact:string pick_up_location1:string pick_up_location2:string pick_up_location3:string pick_up_location4:string pick_up_location5:string price:integer negotiable:boolean spam:string visible:boolean pageview:integer voteup:integer comment:string created:timestamp modified:timestamp type_pawn:string avaialble_from:timestamp avaialble_till:timestamp
+
+
+Events
+
+rails generate scaffold events actor_id event_id category event_name short_description start_date:date end_date:date start_time:time end_time:time venu visible_locations visible_scope image:blob long_desciption image1:blob image2:blob image3:blob image4:blob image5:blob friend_id spam:boolean page_view:number rating:number
+

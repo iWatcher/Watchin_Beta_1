@@ -21,6 +21,7 @@
 		<% flash.each do |first_name,msg| %>
 		<% content_tag :div, msg, id: "flash_#{first_name}" %>
 		<% end %>
+
 		<%= yield %>
 
 	 <% if current_user %>
@@ -41,9 +42,11 @@
                status:true
             });
       
-            FB.ui({ method: 'apprequests', message: '<%= current_user.first_name %> <%= current_user.last_name %> thinks you are really Awesome.'});
+            FB.ui({ method: 'apprequests', message: ' <%= current_user.last_name %> thinks you are really Awesome.'});
           });
         });
+
+
       </script>
     </div>
   <% end %>

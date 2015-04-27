@@ -1,0 +1,49 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  actor_id: MyString
+  event_id: MyString
+  category: MyString
+  event_name: MyString
+  short_description: MyString
+  start_date: 2015-04-15
+  end_date: 2015-04-15
+  start_time: 2015-04-15 17:33:41
+  end_time: 2015-04-15 17:33:41
+  venu: MyString
+  visible_locations: MyString
+  visible_scope: MyString
+  image: 
+  long_desciption: MyString
+  image1: 
+  image2: 
+  image3: 
+  image4: 
+  image5: 
+  friend_id: MyString
+  spam: false
+  page_views: 
+
+two:
+  actor_id: MyString
+  event_id: MyString
+  category: MyString
+  event_name: MyString
+  short_description: MyString
+  start_date: 2015-04-15
+  end_date: 2015-04-15
+  start_time: 2015-04-15 17:33:41
+  end_time: 2015-04-15 17:33:41
+  venu: MyString
+  visible_locations: MyString
+  visible_scope: MyString
+  image: 
+  long_desciption: MyString
+  image1: 
+  image2: 
+  image3: 
+  image4: 
+  image5: 
+  friend_id: MyString
+  spam: false
+  page_views: 
