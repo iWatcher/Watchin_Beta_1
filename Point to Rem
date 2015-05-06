@@ -1,0 +1,4 @@
+We need to runt his file when rmagic fails in bundle install
+
+sudo apt-get install libmagickwand5 libmagickwand-dev
+

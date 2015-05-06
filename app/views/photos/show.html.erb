@@ -14,7 +14,10 @@
   <b>Pic:</b>
   <%= @photo.pic %>
 </p>
+<div class='photo'>
+	<%= image_tag @photo.image_url(:thumb).to_s %>
 
+</div>
 
 <%= link_to 'Edit', edit_photo_path(@photo) %> |
 <%= link_to 'Back', photos_path %>

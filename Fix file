@@ -2,3 +2,16 @@ IPV error fix
 
 $ \curl -sSL https://get.rvm.io --ipv4 | bash -s stable
 ------------------------------------------------------------------------------------------
+rmagic 
+
+Solution is to add ppa where those libs could be found.
+
+Add PPA:
+
+sudo add-apt-repository ppa:ricotz/testing
+Then update package list:
+
+sudo apt-get update
+Finally install it with:
+
+sudo apt-get install libmagickwand-dev
